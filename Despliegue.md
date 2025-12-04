@@ -272,4 +272,4 @@ Metadata
     
 ## Estado Final
 
-La imagen se crea y se publica en Docker Hub correctamente. Pero al hacer el despliegue, pero no hay acceso al intentar acceder.
+La imagen se crea y se publica en Docker Hub correctamente. Pero al hacer el despliegue, no hay acceso al intentar acceder.

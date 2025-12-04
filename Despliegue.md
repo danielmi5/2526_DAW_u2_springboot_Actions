@@ -12,7 +12,7 @@ https://github.com/danielmi5/2526_DAW_u2_springboot_Actions/blob/14684b150e0b707
 
 https://github.com/danielmi5/2526_DAW_u2_springboot_Actions/blob/14684b150e0b707d56e39fb85770e1e36a39a951/.github/workflows/cd.yml#L17-L43
 
-- **steps del job:**
+- **steps del job:**  
       1. Obtiene el repositorio.  
       2. Inicia sesión en Docker Hub a partir del action `docker/login-action` y se utiliza con el with para el usuario y contraseña los secretos de github.  
       3. Extrae los tags y labels para Docker a partir del action `docker/metadata-action` y se define con with el nombre de estos y el de la imagen.  
@@ -21,4 +21,4 @@ https://github.com/danielmi5/2526_DAW_u2_springboot_Actions/blob/14684b150e0b707
     
 ## Estado Final
 
-La imagen se crea y se publica en Docker Hub. Pero a la hora de hacer el despliegue, no funciona la conexión.
+La imagen se crea y se publica en Docker Hub. Pero a la hora de hacer el despliegue, lo hace, pero no he podido acceder.

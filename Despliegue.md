@@ -272,4 +272,52 @@ Metadata
     
 ## Estado Final
 
-La imagen se crea y se publica en Docker Hub correctamente. Pero al hacer el despliegue, no hay acceso al intentar acceder.
+La imagen se construye y se publica correctamente en Docker Hub, sin errores. Pero, al realizar el despliegue e intentar acceder a la aplicación, no deja acceder. Logs de la ejecución: 
+
+```bash
+04-Dec-2025 09:19:45.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.49
+
+04-Dec-2025 09:19:45.373 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 6 2025 01:31:11 UTC
+
+04-Dec-2025 09:19:45.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.49.0
+
+04-Dec-2025 09:19:45.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+
+04-Dec-2025 09:19:45.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.6.87.2-microsoft-standard-WSL2
+
+04-Dec-2025 09:19:45.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+
+04-Dec-2025 09:19:45.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/java/openjdk
+
+04-Dec-2025 09:19:45.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.17+10
+
+04-Dec-2025 09:19:45.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+
+04-Dec-2025 09:19:45.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+
+04-Dec-2025 09:19:45.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+
+04-Dec-2025 09:19:45.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+
+04-Dec-2025 09:19:45.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+
+04-Dec-2025 09:19:45.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+
+04-Dec-2025 09:19:45.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+
+04-Dec-2025 09:19:45.399 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+
+04-Dec-2025 09:19:45.399 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+
+04-Dec-2025 09:19:45.399 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+
+04-Dec-2025 09:19:45.399 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+
+04-Dec-2025 09:19:45.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+
+04-Dec-2025 09:19:45.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+
+04-Dec-2025 09:19:45.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+
+04-Dec-2025 09:19:45.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+```

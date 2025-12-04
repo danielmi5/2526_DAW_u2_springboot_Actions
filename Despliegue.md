@@ -10,7 +10,7 @@ https://github.com/danielmi5/2526_DAW_u2_springboot_Actions/blob/14684b150e0b707
 - **on:** El action se ejecuta cuando se hace push a la rama master o se hace manualmente desde `Actions`. 
 - **jobs:** Subir la imagen a docker hub, se ejecuta en Ubuntu 22.04, y tiene permisos de escritura (packages, attestations e id-token) y lectura (contents).
 
-https://github.com/danielmi5/2526_DAW_u2_springboot_Actions/blob/14684b150e0b707d56e39fb85770e1e36a39a951/.github/workflows/cd.yml#L17C5-L43
+https://github.com/danielmi5/2526_DAW_u2_springboot_Actions/blob/14684b150e0b707d56e39fb85770e1e36a39a951/.github/workflows/cd.yml#L17-L43
 
 - **steps del job:**
       1. Obtiene el repositorio.  
